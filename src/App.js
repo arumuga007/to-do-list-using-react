@@ -15,7 +15,7 @@ function App() {
       addValue([...todo, workToAdd]);
       setValue("");
     }}>add</button>
-    {todo.map((works) => { return <h1 align = "center">{works}</h1>})}
+    { todo.length != 0 && todo.map((works) => { return <h1 align = "center">{works}</h1>})}
   </div>
  )
 }

@@ -6,6 +6,7 @@ function App() {
  const[workToAdd, setValue] = useState([]);
  return(
   <div>
+    <h1 align = "center">To Do List</h1>
     <label align = "center">Enter the work</label>
     <input onChange={(event) => {
       setValue(event.target.value);

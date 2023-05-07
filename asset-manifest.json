@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/arumuga007.github.io/to-do-list-using-react/static/css/main.073c9b0a.css",
-    "main.js": "/arumuga007.github.io/to-do-list-using-react/static/js/main.fbfa87fa.js",
+    "main.js": "/arumuga007.github.io/to-do-list-using-react/static/js/main.68158e3e.js",
     "index.html": "/arumuga007.github.io/to-do-list-using-react/index.html",
     "main.073c9b0a.css.map": "/arumuga007.github.io/to-do-list-using-react/static/css/main.073c9b0a.css.map",
-    "main.fbfa87fa.js.map": "/arumuga007.github.io/to-do-list-using-react/static/js/main.fbfa87fa.js.map"
+    "main.68158e3e.js.map": "/arumuga007.github.io/to-do-list-using-react/static/js/main.68158e3e.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.fbfa87fa.js"
+    "static/js/main.68158e3e.js"
   ]
 }

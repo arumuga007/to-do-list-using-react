@@ -9,6 +9,10 @@ const deleteTask = (tasks) => {
   addValue(tasks);
 }
 const addWork = () => {
+  if(workToAdd === "") {
+    alert("Task cannot be empty");
+    return;
+}
   let newTask = {id: todo.length === 0 ? 1 : todo[todo.length - 1].id + 1, task:workToAdd, completed:false};
   addValue([...todo, newTask]);
   setValue("");
@@ -24,7 +28,7 @@ const addWork = () => {
     } 
     onKeyUp={
       (event) => {
-        if(event.keyCode == 13)
+        if(event.keyCode === 13)
           addWork();
       }
     }

@@ -4,8 +4,15 @@ export const AddTask = (props) => {
           {props.tasks.map((work) => {
             return(
             <div>
-            <input type = "checkbox" />
-            <span>{work.task}</span>
+            <input type = "checkbox" onChange={() => {
+              const modifyedTasks = props.tasks.map((previousWorks) => {
+                  if(previousWorks.id === work.id)
+                      return {...previousWorks, completed: !work.completed};
+                  return previousWorks;
+              })
+              props.deleteTask(modifyedTasks);
+            }}/>
+            <span style={{color: work.completed === false ? "red" : "green "}}>{work.task}</span>
             <button onClick={()=> {
               let modifyedTasks = props.tasks.filter((previousWorks) => previousWorks.id !== work.id)
               props.deleteTask(modifyedTasks);

@@ -1,7 +1,19 @@
 .App {
   text-align: center;
 }
-
+.header {
+  display: inline;
+}
+.menu {
+  list-style: none;
+  display: inline;
+  
+}
+.menu > li{
+  display: inline;
+  text-decoration: none;
+  margin-left: 30px;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;

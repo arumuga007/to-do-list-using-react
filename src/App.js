@@ -1,7 +1,12 @@
-
+import { Menus } from './Menus';
+import {BrowserRouter, Routes, Route} from "react-router-dom";
 import './App.css';
 import { AddTask } from './TaskManage';
 import { useState } from 'react';
+import {Completed} from "./navbar/Completed";
+import {Contact} from "./navbar/Contact";
+import {GetTask} from "./navbar/GetTask";
+import {Home} from "./navbar/Home";
 function App() {
  const [todo, addValue] = useState([]);
  const[workToAdd, setValue] = useState("");
@@ -19,7 +24,16 @@ const addWork = () => {
 }
  return(
   <div>
-    <h1 align = "center">To Do List</h1>
+    <h1 className='header'>To Do List</h1>
+    <BrowserRouter>
+      <Menus />
+      <Routes>
+        <Route path = "/" element = {<Home />}></Route>
+        <Route path = "/add" element = {<GetTask />}></Route>
+        <Route path = "/completed" element = {<Completed />}></Route>
+        <Route path = "/contact" element = {<Contact />}></Route>
+      </Routes>
+    </BrowserRouter>
     <h1>Enter the work</h1>
     <input placeholder="Enter your task here" onChange={
         (event) => {

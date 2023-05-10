@@ -23,10 +23,12 @@ const addWork = () => {
   setValue("");
 }
  return(
-  <div>
-    <h1 className='header'>To Do List</h1>
+  <div  className="container">
     <BrowserRouter>
-      <Menus />
+    <div className='header-container'>
+    <h1 className='header'>To Do List</h1>
+    <Menus />
+    </div>
       <Routes>
         <Route path = "/" element = {<Home />}></Route>
         <Route path = "/add" element = {<GetTask />}></Route>
